@@ -1,0 +1,1 @@
+docker run  --name ansible -h ansible -v /etc/ansible/hosts:/etc/ansible/hosts -v /etc/ansible/linux/group_vars/systech.yml:/etc/ansible/linux/group_vars/systech.yml -d hub.c.163.com/mengkzhaoyun/cloud/ansible-kubernetes
