@@ -1,0 +1,15 @@
+[root@d24196cf26c1 linux]# ap 1.install.yml 
+
+PLAY [all] *********************************************************************
+
+TASK [wod.python : Run bootstrap.sh] *******************************************
+fatal: [systech15]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Connection timed out during banner exchange\r\n", "unreachable": true}
+fatal: [systech16]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Connection timed out during banner exchange\r\n", "unreachable": true}
+fatal: [systech14]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Connection timed out during banner exchange\r\n", "unreachable": true}
+	to retry, use: --limit @/etc/ansible/linux/1.install.retry
+
+PLAY RECAP *********************************************************************
+systech14                  : ok=0    changed=0    unreachable=1    failed=0   
+systech15                  : ok=0    changed=0    unreachable=1    failed=0   
+systech16                  : ok=0    changed=0    unreachable=1    failed=0   
+
